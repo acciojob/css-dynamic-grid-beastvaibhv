@@ -1,8 +1,10 @@
 /*  your css code here. If applicable */
 .grid-container{
 	display: grid;
-	grid-template-columns:repeat(9, 215px);
-	grid-auto-flow: column;
+	grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+	gap: 10px 10px;
+	justify-content:start;
+	
 }
 .grid-item{
 	background-color: lightgray;
@@ -10,7 +12,7 @@
 	width: 200px;
 	border-radius: 5px;
 	font-size: 40px;
-	padding: 5px;
+	justify-content:center;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 }
